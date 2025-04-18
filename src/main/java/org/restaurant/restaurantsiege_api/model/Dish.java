@@ -3,6 +3,7 @@ package org.restaurant.restaurantsiege_api.model;
 import lombok.*;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @ToString
 @EqualsAndHashCode

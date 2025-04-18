@@ -12,4 +12,9 @@ public class SalesPoint {
     private String name;
     private String url;
     private String apiKey;
+
+    public SalesPoint(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
