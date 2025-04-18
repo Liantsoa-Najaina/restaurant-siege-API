@@ -12,5 +12,4 @@ import java.time.Instant;
 @NoArgsConstructor
 public class OrderStatus {
     private OrderStatus status;
-    private Instant updatedAt;
 }
