@@ -1,7 +1,15 @@
 package org.restaurant.restaurantsiege_api.model;
 
+import lombok.*;
+
 import java.time.Instant;
 
+@AllArgsConstructor
+@Data
+@Builder
+@EqualsAndHashCode
+@ToString
+@NoArgsConstructor
 public class DOStatus {
     private DOStatusType status;
     private Instant updatedAt;
