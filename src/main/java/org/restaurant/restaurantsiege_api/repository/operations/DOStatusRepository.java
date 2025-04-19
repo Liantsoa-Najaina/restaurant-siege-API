@@ -31,7 +31,7 @@ public class DOStatusRepository {
                 """;
 
         try (Connection connection = dataSource.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql);) {
+             PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setLong(1, dishOrderId);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
