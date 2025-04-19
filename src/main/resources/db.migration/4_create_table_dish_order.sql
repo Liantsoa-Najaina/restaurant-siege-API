@@ -4,5 +4,6 @@ CREATE TABLE IF NOT EXISTS dish_order (
     id SERIAL PRIMARY KEY ,
     id_dish INT REFERENCES dish(id),
     quantity INT,
-    order_status status
+    order_status status,
+    sales_point_id INT REFERENCES sales_point(id)
 );
